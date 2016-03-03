@@ -13,6 +13,7 @@
 		425DB5331C7C99ED00D8B392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425DB5321C7C99ED00D8B392 /* Assets.xcassets */; };
 		425DB5361C7C99ED00D8B392 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425DB5341C7C99ED00D8B392 /* LaunchScreen.storyboard */; };
 		425DB5411C7C99ED00D8B392 /* DR_NUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425DB5401C7C99ED00D8B392 /* DR_NUTests.swift */; };
+		42F89BB71C7DF553002E8627 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F89BB61C7DF553002E8627 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		425DB53C1C7C99ED00D8B392 /* DR NUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DR NUTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		425DB5401C7C99ED00D8B392 /* DR_NUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DR_NUTests.swift; sourceTree = "<group>"; };
 		425DB5421C7C99ED00D8B392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42F89BB61C7DF553002E8627 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42F89BB71C7DF553002E8627 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +65,7 @@
 				425DB52A1C7C99ED00D8B392 /* DR NU */,
 				425DB53F1C7C99ED00D8B392 /* DR NUTests */,
 				425DB5291C7C99ED00D8B392 /* Products */,
+				42F89BB61C7DF553002E8627 /* AVFoundation.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,6 +150,11 @@
 				TargetAttributes = {
 					425DB5271C7C99ED00D8B392 = {
 						CreatedOnToolsVersion = 7.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					425DB53B1C7C99ED00D8B392 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -386,6 +395,7 @@
 				425DB5471C7C99ED00D8B392 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		425DB5481C7C99ED00D8B392 /* Build configuration list for PBXNativeTarget "DR NUTests" */ = {
 			isa = XCConfigurationList;
@@ -394,6 +404,7 @@
 				425DB54A1C7C99ED00D8B392 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

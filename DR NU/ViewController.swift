@@ -2,7 +2,7 @@ import UIKit
 import MediaPlayer
 import AVFoundation
 
-let base = ""
+let base = "http://nu.drdinstem.me/"
 
 class ViewController: UIViewController, UIWebViewDelegate {
 
